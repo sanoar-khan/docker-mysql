@@ -1,27 +1,27 @@
 version: "3"
 
 tasks:
-  docker-run:
+  dc-up:
     desc: "Start docker containers"
     cmds:
-      - docker compose --env-file config.env up -d
+      - docker compose --env-file configs/config.env up -d
 
-  docker-stop:
+  dc-stop:
     desc: "Stop docker containers"
     cmds:
-      - docker compose --env-file config.env stop
+      - docker compose --env-file configs/config.env stop
 
-  docker-down:
+  dc-down:
     desc: "Delete docker containers"
     cmds:
-      - docker compose --env-file config.env down
+      - docker compose --env-file configs/config.env down
 
-  docker-logs:
+  dc-logs:
     desc: "Show logs of docker containers"
     cmds:
-      - docker compose --env-file config.env logs --follow
+      - docker compose --env-file configs/config.env logs --follow
 
-  clean:
+  dc-prune:
     desc: "Clean up"
     prompt: This is a dangerous command... Do you want to continue?
     cmds:
