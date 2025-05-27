@@ -23,3 +23,12 @@ go.work.sum
 
 # env file
 .env
+*.env
+
+# db data
+dbdata/*
+!dbdata/.gitkeep
+
+# secrets directory
+secrets/*
+!secrets/.gitkeep
