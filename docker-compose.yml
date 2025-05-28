@@ -21,7 +21,7 @@ services:
 
 secrets:
   mysql-root-password:
-    file: secrets/msyql-root-password.txt
+    file: secrets/mysql-root-password.txt
   mysql-user:
     file: secrets/mysql-user.txt
   mysql-password:
